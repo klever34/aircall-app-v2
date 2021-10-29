@@ -1,10 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
 // import "./index.css";
-import "./activity.css";
-import "./app.css";
-import "./body.css";
-import "./header.css";
+// import "./activity.css";
+import "../src/assets/css/activity.css";
+import "../src/assets/css/app.css";
+import "../src/assets/css/body.css";
+import "../src/assets/css/header.css";
+// import "./app.css";
+// import "./body.css";
+// import "./header.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
