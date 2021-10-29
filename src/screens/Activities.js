@@ -157,7 +157,7 @@ const Activities = () => {
   });
 
   return (
-    <div className="activity-body">
+    <div style={{ position: "relative", height: "88%" }}>
       {!showDetails && (
         <div>
           <div style={{ marginLeft: 20, marginRight: 20 }}>
@@ -213,11 +213,10 @@ const Activities = () => {
                 }}
                 onClick={() => start("not-archived")}
               >
-                Go to Calls
+                {"< Unarchived Calls"}
               </p>
             )}
           </div>
-          <Footer numLength={missedCallCount} />
         </div>
       )}
       {showDetails && (
@@ -247,6 +246,7 @@ const Activities = () => {
           {message}
         </Alert>
       </Snackbar>
+      {!showDetails && <Footer numLength={missedCallCount} />}
     </div>
   );
 };

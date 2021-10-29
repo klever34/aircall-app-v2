@@ -18,7 +18,7 @@ const ActivityCard = (props) => {
     }
   };
   return (
-    <div>
+    <div style={{ height: "100%" }}>
       {props.data.map((item, index) => (
         <div key={index}>
           {item.actvFeeds.length > 0 && (
